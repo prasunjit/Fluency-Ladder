@@ -5,15 +5,16 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class Instructions extends AppCompatActivity {
+public class LevelUnlocked extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_instructions);
+        setContentView(R.layout.activity_level_unlocked);
     }
-    public void gotoFirstActivity(View view) {
-        Intent intent1 = new Intent(this, MainActivity.class);
-        startActivity(intent1);
+
+    public void gotoSecondActivity(View view) {
+        Intent intent2 = new Intent(this, SecondActivity.class);
+        startActivity(intent2);
     }
 }

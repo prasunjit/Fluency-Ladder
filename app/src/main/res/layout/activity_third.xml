@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3ca67d"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="nwmissouri.androidfinalproject.MainActivity">
+    <LinearLayout android:id="@+id/linearLayout_left"
+        android:layout_width="250dp"
+        android:background="@drawable/box1"
+        android:layout_height="270dp"
+        android:padding="60dp"
+        android:orientation="vertical"
+        android:layout_marginTop="130dp">
+
+        </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout_right"
+        android:layout_width="250dp"
+        android:background="@drawable/box1"
+        android:layout_height="270dp"
+        android:padding="60dp"
+        android:orientation="vertical"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="50dp"
+        android:layout_toEndOf="@+id/linearLayout_left">
+    </LinearLayout>
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Replay"
+        android:background="#ff7300"
+        android:textColor="#ffffff"
+        android:onClick="replay"
+        android:textSize="30dp"
+        android:id="@+id/replayBTN"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/leftBoxTV"
+        android:textSize="40dp"
+        android:text="Balls"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="440dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/rightBoxTV"
+        android:textSize="40dp"
+        android:text="Balls"
+        android:textAlignment="center"
+        android:layout_marginLeft="380dp"
+        android:layout_marginTop="440dp"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/plusSign"
+        android:layout_marginLeft="245dp"
+        android:layout_marginTop="435dp"
+        android:src="@drawable/plus"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultTV"
+        android:textSize="60dp"
+        android:text="hi"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="140dp"
+        android:textColor="#ffffff"
+        android:layout_alignStart="@+id/Box1BallsTV" />
+
+    <TextView
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Congratulations You have cleared all the steps of counting"
+        android:id="@+id/messageTV"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="650dp"/>
+
+</RelativeLayout>

@@ -15,8 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SecondActivity" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".ThirdActivity" />
         <activity android:name=".Instructions" />
+        <activity android:name=".LevelUnlocked" />
+        <activity android:name=".ThirdLevelUnlocked"/>
     </application>
 
 </manifest>

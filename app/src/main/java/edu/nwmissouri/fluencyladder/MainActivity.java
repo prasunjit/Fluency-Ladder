@@ -399,10 +399,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-   /* public void gotoLevelUnlocked(View view) {
+    public void gotoLevelUnlocked(View view) {
         Intent intent1 = new Intent(this, LevelUnlocked.class);
         startActivity(intent1);
-    }*/
+    }
 
     public void replay(View view) {
         Intent intent2 = new Intent(this, MainActivity.class);
